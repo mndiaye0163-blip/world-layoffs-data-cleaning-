@@ -1,10 +1,10 @@
-# 🧹 World Layoffs — SQL Data Cleaning Project
+#  World Layoffs — SQL Data Cleaning Project
 
 A structured SQL data cleaning project that prepares a real-world global layoffs dataset for exploratory data analysis (EDA). The project focuses on standardising inconsistent values, correcting data types, and removing unusable records to produce a clean, analysis-ready table.
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 The dataset (`world_layoffs`) tracks tech and corporate layoffs globally, including fields such as:
 
@@ -19,7 +19,7 @@ The raw data is loaded into a staging table (`layoffs_staging2`) to preserve the
 
 ---
 
-## 🛠️ Data Cleaning Steps
+##  Data Cleaning Steps
 
 ### 1. Standardising Country Names
 
@@ -67,7 +67,7 @@ DROP COLUMN row_num;
 
 ---
 
-## 📂 File Structure
+##  File Structure
 
 ```
 ├── WORLD_LAYOFFS_data_cleaning.sql   # Main data cleaning script
@@ -76,7 +76,7 @@ DROP COLUMN row_num;
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 1. Import the raw layoffs dataset into your MySQL database under the schema `world_layoffs`.
 2. Ensure the staging table `layoffs_staging2` exists (created in a prior step).
@@ -92,7 +92,7 @@ DROP COLUMN row_num;
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - This script operates on the **staging table** (`layoffs_staging2`), not the original raw table, ensuring the source data is never modified.
 - NULL values in numeric columns are preserved deliberately — they are handled appropriately during the EDA phase rather than imputed or dropped blindly.
@@ -100,7 +100,7 @@ DROP COLUMN row_num;
 
 ---
 
-## 📊 Next Steps
+##  Next Steps
 
 With the data now cleaned, the next phase is **Exploratory Data Analysis (EDA)**, which will explore:
 
